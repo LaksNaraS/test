@@ -2,18 +2,6 @@
     var systemPasteReady = false;
     var systemPasteContent;
      
-     function cut(target) {
-        // standard way of copying
-        var textArea = document.createElement('textarea');
-        textArea.setAttribute('style','width:1px;border:0;opacity:0;');
-        document.body.appendChild(textArea);
-        textArea.value = target.innerHTML;
-        textArea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textArea);
-        textArea.value =""
-    }
-
     function copy(target) {
         // standard way of copying
         var textArea = document.createElement('textarea');
